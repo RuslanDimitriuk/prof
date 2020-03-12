@@ -1,5 +1,5 @@
 <template>
-    <div class="card">
+    <div class="card" :class="projectData.class">
         <div class="card__main">
             <a :href="projectData.link" target="_blank">
                 <div class="card__main-block">
@@ -34,10 +34,17 @@
         width: 25vw;
         height: 25vw;
         margin: calc(8vw / 2);
-        background: url("./../assets/img-main.jpg") no-repeat;
-        background-size: auto;
         display: flex;
         justify-content: center;
+        border-radius: 5px;
+    }
+    .ro{
+        background: url("../assets/nca_ro.jpg") no-repeat;
+        background-size: cover;
+    }
+    .ate{
+        background: url("../assets/ate_sc.jpg") no-repeat;
+        background-size: cover;
     }
 
     .card:hover .card__main {
@@ -90,5 +97,16 @@
 
     .card__main-description {
 
+    }
+    @media screen and (max-width: 900px) {
+        .card {
+            position: relative;
+            width: 80vw;
+            height: 80vw;
+            margin: 0px auto 30px auto;
+            display: flex;
+            justify-content: center;
+            border-radius: 5px;
+        }
     }
 </style>

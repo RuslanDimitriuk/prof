@@ -1,8 +1,8 @@
 <template>
-    <div class="about-me">
+    <div class="about-me" id="aboutMe">
         <div class="about-me__content">
             <div class="about-me__photo">
-                <img src="#" alt="My foto">
+                <img src="./../assets/I.jpg" alt="My foto" width="400px" height="400px">
             </div>
             <div class="about-me__info">
                 <h3 class="about-me__title">ABOUT ME.</h3>
@@ -175,5 +175,44 @@
         width: 32px;
         height: 32px;
         background: url('../assets/social_sprites.png') -164px -20px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .about-me {
+            padding: 50px 0 50px 0;
+        }
+
+        .about-me__content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .about-me__photo {
+            width: 80vw;
+            height: 80vw;
+            margin: 0px auto 50px auto;
+            background: #b4d1df;
+        }
+        .about-me__info {
+            width: 80%;
+            text-align: center;
+            margin: 0px auto 50px auto;
+        }
+        .about-me__title {
+            text-align: center;
+        }
+        .about-me__prof {
+            display: block;
+            text-align: center;
+        }
+
+        .about-me__info-text {
+          text-align: left;
+        }
+        .about-me__social {
+            margin: 30px auto;
+
+        }
     }
 </style>

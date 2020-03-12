@@ -48,4 +48,9 @@
         font-weight: bold;
         margin-bottom: 20px;
     }
+    @media screen and (max-width: 900px) {
+        .services-card{
+            padding-bottom: 30px;
+        }
+    }
 </style>

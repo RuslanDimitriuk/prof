@@ -75,4 +75,14 @@
         text-decoration: none;
         color: #fff
     }
+    @media screen and (max-width: 900px){
+        .footer__info {
+            flex-direction: column;
+        }
+        .footer__info-elem {
+            text-align: center;
+            width: 80%;
+            margin: 0px auto 30px auto;
+        }
+    }
 </style>

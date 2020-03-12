@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="common">
       <header-custom/>
         <router-view/>
         <footer-custom/>
@@ -26,5 +26,11 @@
     @import './../node_modules/reset-css/reset.css';
     body{
         font-family: Geneva, Arial, Helvetica, sans-serif;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    .common{
+        min-width: 640px;
     }
 </style>

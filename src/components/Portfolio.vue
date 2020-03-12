@@ -1,5 +1,5 @@
 <template>
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
         <div class="portfolio__title">
             <h4 class="portfolio__title-head">PORTFOLIO</h4>
             <span class="portfolio__title-text">WORK I HAVE DONE</span>
@@ -23,19 +23,22 @@
                         id: 1,
                         title: 'Title-1',
                         description: 'Descr-1',
-                        link: '#'
+                        link: '#',
+                        class: 'ate'
                     },
                     {
                         id: 2,
                         title: 'Title-2',
                         description: 'Descr-2',
-                        link: '#'
+                        link: '#',
+                        class: 'ro'
                     },
                     {
                         id: 3,
                         title: 'Title-3',
                         description: 'Descr-3',
-                        link: '#'
+                        link: '#',
+                        class: 'faro'
                     }
                 ]
             }
@@ -45,7 +48,7 @@
 
 <style scoped>
     .portfolio {
-
+background: #d5d5d5;
     }
 
     .portfolioCardBox {
@@ -66,5 +69,11 @@
         font-size: 32px;
         font-weight: bold;
         margin-bottom: 20px;
+    }
+    @media screen and (max-width: 900px) {
+        .portfolioCardBox {
+            display: flex;
+            flex-direction: column;
+        }
     }
 </style>

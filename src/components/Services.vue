@@ -1,5 +1,5 @@
 <template>
-    <div class="services">
+    <div class="services" id="services">
         <div class="services__title">
             <h4 class="services__title-head">SERVICES</h4>
             <span class="services__title-text">WHAT I CAN DO</span>
@@ -25,19 +25,19 @@
                         id: 1,
                         img: 'settings-gears',
                         title: 'WEB DEVELOPMENT',
-                        text: 'Lorem Ipsum is simply dummy text of the Lorem has been the industry\'s standard dummy text ever.'
+                        text: 'Full front-end side development cycle using both native JS and Vue.js. Possible implementation of the back-end side using node.js'
                     },
                     {
                         id: 2,
                         img: 'smartphone',
                         title: 'RESPONSIVE IMPLEMENTATION',
-                        text: 'Lorem Ipsum is simply dummy text of the Lorem has been the industry\'s standard dummy text ever.'
+                        text: 'Implementation ADW (adaptive web design) и RWD (responsive web design) in all projects'
                     },
                     {
                         id: 3,
                         img: 'clock',
                         title: 'SUPPORT',
-                        text: 'Lorem Ipsum is simply dummy text of the Lorem has been the industry\'s standard dummy text ever.'
+                        text: 'Implemented interaction and assistance in the implementation and support of the project'
                     }
                 ]
             }
@@ -71,5 +71,14 @@
     }
     .services__card{
         width: 20%;
+    }
+    @media screen and (max-width: 900px) {
+        .services__card-box{
+            flex-direction: column;
+        }
+        .services__card{
+            margin: 0px auto 30px auto;
+            width: 80%;
+        }
     }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="main">
         <div class="main">
             <div class="main__content">
                 <h1 class="main__title">Hi! I'm Ruslan.</h1>
@@ -12,9 +12,11 @@
                     </div>
                 </div>
             </div>
-            <div class="main__arrow-block" @click="wayDown">
-                <div class="main__arrow">
-                </div>
+            <div class="main__arrow-block">
+                <a href="#aboutMe">
+                    <div class="main__arrow">
+                    </div>
+                </a>
             </div>
         </div>
         <about-me/>
@@ -49,19 +51,19 @@
             }
         },
         methods: {
-            wayDown() {
-                let currentScroll = window.scrollY;
-                let wHeight = document.getElementsByClassName('main')[0].clientHeight;
-                currentScroll = currentScroll + 5;
-                window.scrollTo(pageXOffset, currentScroll);
-                setTimeout(() => {
-                    if (wHeight > window.scrollY) {
-                        this.wayDown();
-                    } else {
-                        currentScroll = 0;
-                    }
-                }, 1)
-            },
+            // wayDown() {
+            //     let currentScroll = window.scrollY;
+            //     let wHeight = document.getElementsByClassName('main')[0].clientHeight;
+            //     currentScroll = currentScroll + 5;
+            //     window.scrollTo(pageXOffset, currentScroll);
+            //     setTimeout(() => {
+            //         if (wHeight > window.scrollY) {
+            //             this.wayDown();
+            //         } else {
+            //             currentScroll = 0;
+            //         }
+            //     }, 1)
+            // },
             type() {
                 if (this.charIndex < this.textArray[this.textArrayIndex].length) {
                     if (!this.cursorSpan.classList.contains("typing")) this.cursorSpan.classList.add("typing");
@@ -98,7 +100,7 @@
 
 <style scoped>
     .main {
-        background: url("./../assets/img-main.jpg") no-repeat;
+        background: url("./../assets/main.jpg") no-repeat;
         background-size: cover;
         width: 100%;
         height: 100vh;
@@ -198,6 +200,12 @@
         }
         100% {
             background-color: #fff;
+        }
+    }
+    @media screen and (max-width: 900px) {
+        .main__arrow-block {
+            position: relative;
+            top: -100px;
         }
     }
 </style>

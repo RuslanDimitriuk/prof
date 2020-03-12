@@ -40,7 +40,7 @@
 
 <style scoped>
     .statistics {
-        background-image: url("./../assets/img-main.jpg");
+        background-image: url("./../assets/road.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -54,7 +54,7 @@
         padding: 150px 0 150px 0;
         display: flex;
         justify-content: space-around;
-        background: rgba(0,0,0, .5);
+        background: rgba(0,0,0, .3);
     }
     .statistics__data-img{
         width: 64px;
