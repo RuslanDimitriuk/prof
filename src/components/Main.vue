@@ -210,10 +210,10 @@
         }
         .main__title{
             margin-top: 30px;
-            font-size: 50px;
+            font-size: 12vw;
         }
         .main__info{
-            font-size: 20px;
+            font-size: 5vw;
         }
 
         .main__arrow {
@@ -222,6 +222,10 @@
         .container div {
             font-size: 2.5rem;
             line-height: 3.2rem;
+        }
+        .main__content {
+            margin-left: 5%;
+            width: 90%;
         }
     }
 </style>

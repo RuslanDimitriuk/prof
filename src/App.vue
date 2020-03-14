@@ -31,6 +31,6 @@
         scroll-behavior: smooth;
     }
     .common{
-        min-width: 640px;
+        /*min-width: 640px;*/
     }
 </style>

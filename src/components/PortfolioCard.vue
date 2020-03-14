@@ -145,5 +145,8 @@
             animation: none;
             width: 78vw;
         }
+        .card:hover .card__main {
+            animation: none;
+        }
     }
 </style>

@@ -48,7 +48,7 @@
                         </div>
                     </a></div>
                 </div>
-                <a href="./../assets/CV_Front-end-dev_Dimitriuk.pdf" download="" class="about-me__btn">DOWNLOAD CV</a>
+                <div class="link-box"><a href="./../assets/CV_Front-end-dev_Dimitriuk.pdf" download="" class="about-me__btn">DOWNLOAD CV</a></div>
             </div>
         </div>
     </div>
@@ -197,25 +197,33 @@
             height: 80vw;
             margin: 0px auto 50px auto;
         }
+
         .about-me__info {
             width: 80%;
             text-align: center;
             margin: 0px auto 50px auto;
         }
+
         .about-me__title {
             text-align: center;
         }
+
         .about-me__prof {
             display: block;
             text-align: center;
         }
 
         .about-me__info-text {
-          text-align: left;
+            text-align: left;
         }
+
         .about-me__social {
             margin: 30px auto;
 
+        }
+        .link-box{
+            display: flex;
+            justify-content: center;
         }
     }
 </style>
