@@ -1,9 +1,7 @@
 <template>
     <div class="about-me" id="aboutMe">
         <div class="about-me__content">
-            <div class="about-me__photo">
-                <img src="./../assets/I.jpg" alt="My foto" width="400px" height="400px">
-            </div>
+            <div class="about-me__photo"></div>
             <div class="about-me__info">
                 <h3 class="about-me__title">ABOUT ME.</h3>
                 <span class="about-me__prof">Web Developer</span>
@@ -50,7 +48,7 @@
                         </div>
                     </a></div>
                 </div>
-                <button class="about-me__btn">DOWNLOAD CV</button>
+                <a href="./../assets/CV_Front-end-dev_Dimitriuk.pdf" download="" class="about-me__btn">DOWNLOAD CV</a>
             </div>
         </div>
     </div>
@@ -76,7 +74,8 @@
     .about-me__photo {
         width: 400px;
         height: 400px;
-        background: #b4d1df;
+        background: url("./../assets/I.jpg") no-repeat;
+        background-size: cover;
     }
 
     .about-me__info {
@@ -102,6 +101,11 @@
     }
 
     .about-me__btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-decoration: none;
+        text-align: center;
         font-size: 16px;
         transition: 300ms;
         width: 160px;
@@ -192,7 +196,6 @@
             width: 80vw;
             height: 80vw;
             margin: 0px auto 50px auto;
-            background: #b4d1df;
         }
         .about-me__info {
             width: 80%;

@@ -21,23 +21,23 @@
                 portfolioProjectData: [
                     {
                         id: 1,
-                        title: 'Title-1',
-                        description: 'Descr-1',
-                        link: '#',
+                        title: 'ATU and TU',
+                        description: 'Corporate WEB application for registration, examination, creation and modification of administrative territorial units, as well as for displaying spatial information and conducting its measurements.',
+                        link: 'http://ate-te.nca.by',
                         class: 'ate'
                     },
                     {
                         id: 2,
-                        title: 'Title-2',
-                        description: 'Descr-2',
-                        link: '#',
+                        title: 'RA',
+                        description: 'Corporate web application for maintaining a unified register of appraisers and a register of appraisal reports',
+                        link: 'http://ro.nca.by',
                         class: 'ro'
                     },
                     {
                         id: 3,
-                        title: 'Title-3',
-                        description: 'Descr-3',
-                        link: '#',
+                        title: 'FARO MEBEL',
+                        description: 'Furniture online store in St. Petersburg',
+                        link: 'http://faromebel.ru',
                         class: 'faro'
                     }
                 ]

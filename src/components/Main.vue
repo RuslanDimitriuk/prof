@@ -165,6 +165,7 @@
         font-weight: bold;
         letter-spacing: 0.1rem;
         overflow: hidden;
+        line-height: 4rem;
     }
 
     .container div div.typed-text {
@@ -206,6 +207,21 @@
         .main__arrow-block {
             position: relative;
             top: -100px;
+        }
+        .main__title{
+            margin-top: 30px;
+            font-size: 50px;
+        }
+        .main__info{
+            font-size: 20px;
+        }
+
+        .main__arrow {
+            margin-top: 60px;
+        }
+        .container div {
+            font-size: 2.5rem;
+            line-height: 3.2rem;
         }
     }
 </style>

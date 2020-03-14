@@ -1,7 +1,7 @@
 <template>
     <div class="card" :class="projectData.class">
         <div class="card__main">
-            <a :href="projectData.link" target="_blank">
+            <a :href="projectData.link" target="_blank" class="card__main-link">
                 <div class="card__main-block">
                     <h4 class="card__main-title">{{projectData.title}}</h4>
                     <span class="card__main-description">{{projectData.description}}</span>
@@ -46,6 +46,10 @@
         background: url("../assets/ate_sc.jpg") no-repeat;
         background-size: cover;
     }
+    .faro{
+        background: url("../assets/faro.jpg") no-repeat;
+        background-size: cover;
+    }
 
     .card:hover .card__main {
         display: block;
@@ -83,6 +87,18 @@
         }
 
     }
+    @keyframes text {
+        from {
+            color: rgba(0,0,0, 0);
+        }
+        50% {
+            color: rgba(0,0,0, 0);
+        }
+        to {
+            color: rgba(0,0,0, 1);
+        }
+
+    }
 
     .card__main-block {
         height: 100%;
@@ -92,11 +108,19 @@
     }
 
     .card__main-title {
+        font-size: 24px;
+        font-weight: bold;
         margin-bottom: 30px;
     }
 
     .card__main-description {
+        animation: text 500ms forwards;
+        width: 23vw;
 
+    }
+    .card__main-link{
+        text-decoration: none;
+        color: #000;
     }
     @media screen and (max-width: 900px) {
         .card {
@@ -107,6 +131,19 @@
             display: flex;
             justify-content: center;
             border-radius: 5px;
+        }
+        .card .card__main {
+            animation: none;
+            display: block;
+            top: 1vw;
+            left: 1vw;
+            width: 78vw;
+            height: 78vw;
+            background: rgba(255, 255, 255, .6);
+        }
+        .card__main-description {
+            animation: none;
+            width: 78vw;
         }
     }
 </style>
