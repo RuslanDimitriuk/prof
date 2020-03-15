@@ -48,7 +48,7 @@
                         </div>
                     </a></div>
                 </div>
-                <div class="link-box"><a href="./../assets/CV_Front-end-dev_Dimitriuk.pdf" download="" class="about-me__btn">DOWNLOAD CV</a></div>
+                <div class="link-box"><a href="https://RuslanDimitriuk.github.io/CV_Front-end-dev_Dimitriuk.pdf" download="" class="about-me__btn">DOWNLOAD CV</a></div>
             </div>
         </div>
     </div>
